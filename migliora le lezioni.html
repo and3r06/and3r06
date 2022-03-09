@@ -1,0 +1,128 @@
+<html>
+
+<head>
+
+  <script type="text/javascript" src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+  <!--codice jquery-->
+<script type="text/javascript">
+
+   jQuery(document).ready(function (){
+  <!--questo codice fa andare su e giu-->
+function scrollWin(anc){
+  target = jQuery(anc)
+  jQuery('html, body').animate({
+         scrollTop: target.offset().top
+       }, 1000);
+        }
+
+  jQuery(".menu1").click(function() {
+       scrollWin("#section1")
+  });
+  jQuery(".menu2").click(function() {
+       scrollWin("#section2")
+  });
+  jQuery(".menu3").click(function() {
+       scrollWin("#section3")
+  });
+  jQuery(".menu4").click(function() {
+       scrollWin("#section4")
+  });
+  jQuery(".menu5").click(function() {
+       scrollWin("#section5")
+  });
+
+    <!--questo codice fa andare su e giu-->
+   });
+
+</script>
+
+
+<!--codice jquery-->
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=League+Gothic&display=swap" rel="stylesheet">
+
+ <style type="text/css">
+
+body{ padding: 0px; margin: 0px;}
+  .sections{ width: 100%; height: 600px;}
+
+    #section1{ background-color: #ddd;}
+    #section2{ background-color: #444;}
+    #section3{ background-color: #ddd;}
+    #section4{ background-color: #444;}
+    #section5{ background-color: #ddd;}
+
+ .flex{ display: flex; align-items: center; justify-content: center;;}
+
+h1, h2{font-family: 'League Gothic', sans-serif; font-size: 50px;
+    margin: 0px;}
+ #menu{ width: 100%; height: 50px; background-color: lightblue; position: fixed;}
+ #menu ul{ margin: 0px}
+ #menu li{ display: inline; margin: 0px 70px; font-family: 'League Gothic', sans-serif; font-size: 21px}
+ #menu li:hover{cursor: pointer; text-decoration: underline;}
+ </style>
+
+</head>
+
+
+
+<body>
+
+<!--menu-->
+  <div id="menu" class="flex">
+    <div id="menu_indoor">
+      <ul>
+          <li class="menu1">home Page</li>
+          <li class="menu2">come funziona</li>
+          <li class="menu3">a cosa serve</li>
+          <li class="menu4">canzoni</li>
+          <li class="menu5">riconoscimenti</li>
+      </ul>
+   </div>
+  </div>
+
+<!--menu-->
+
+<!--contenuto-->
+
+<div id="section1" class="sections flex">
+     <div class="sections_indoor">
+<h1>BENVENUTI AL SITO PER MIGLIORARE LE TUE LEZIONI</h1>
+<p>questa pagina e' stata creata per migliorare le lezioni con un po di musica, trovando canzoni </p>
+  <p> adatte al momento o alla situazione che aiuteranno a migliorare,drammatizzare,temperare o calmare la situazione</p>
+    </div>
+</div>
+
+<div id="section2" class="sections flex">
+
+  <h2>come funziona</h2>
+
+</div>
+
+<div id="section3" class="sections flex">
+
+<h2>a cosa serve</h2>
+
+</div>
+
+<div id="section4" class="sections flex">
+
+<h2>canzoni</h2>
+
+</div>
+
+<div id="section5" class="sections flex">
+
+<h2>riconoscimenti</h2>
+
+</div>
+
+<!--contenuto-->
+
+</body>
+
+
+</html>
